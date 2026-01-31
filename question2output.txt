@@ -1,0 +1,51 @@
+=== Shrnutí ===
+
+CleverMiner task processing summary:
+
+Task type : 4ftMiner
+Number of verifications : 13
+Number of rules : 13
+Total time needed : 00h 00m 00s
+Time of data preparation : 00h 00m 00s
+Time of rule mining : 00h 00m 00s
+
+
+=== Seznam pravidel ===
+
+List of rules:
+RULEID BASE  CONF  AAD    Rule
+     1 20820 0.959 -0.015 Male (%)((47.609, 49.13]) => severity_level(Low) | ---
+     2 15263 0.951 -0.024 Male (%)((47.609, 49.13]) & Female (%)((50.87, 52.39]) => severity_level(Low) | ---
+     3 22819 0.963 -0.012 Male (%)((49.13, 49.9]) => severity_level(Low) | ---
+     4 17380 0.955 -0.021 Male (%)((49.13, 49.9]) & Female (%)((50.1, 50.87]) => severity_level(Low) | ---
+     5 28802 0.996 +0.022 Male (%)((49.9, 49.96]) => severity_level(Low) | ---
+     6 26487 0.997 +0.023 Male (%)((49.9, 49.96]) & Female (%)((48.789, 50.04]) => severity_level(Low) | ---
+     7 26487 0.997 +0.023 Male (%)((49.9, 49.96]) & Female (%)((48.789, 50.04]) & State(California) => severity_level(Low) | ---
+     8 26487 0.997 +0.023 Male (%)((49.9, 49.96]) & State(California) => severity_level(Low) | ---
+     9 36038 0.991 +0.017 Female (%)((48.789, 50.04]) => severity_level(Low) | ---
+    10 26487 0.997 +0.023 Female (%)((48.789, 50.04]) & State(California) => severity_level(Low) | ---
+    11 22937 0.962 -0.013 Female (%)((50.1, 50.87]) => severity_level(Low) | ---
+    12 15263 0.951 -0.024 Female (%)((50.87, 52.39]) => severity_level(Low) | ---
+    13 26487 0.997 +0.023 State(California) => severity_level(Low) | ---
+
+
+=== První pravidlo ===
+
+
+Rule id : 1
+
+Base : 20820  Relative base : 0.247  CONF : 0.959  AAD : -0.015  BAD : +0.015
+
+Cedents:
+  antecedent : Male (%)((47.609, 49.13])
+  succcedent : severity_level(Low)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  |20820|  879|
+----|-----|-----|
+¬A  |61172| 1260|
+----|-----|-----|
+

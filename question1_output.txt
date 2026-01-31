@@ -1,0 +1,41 @@
+=== Shrnutí ===
+
+CleverMiner task processing summary:
+
+Task type : 4ftMiner
+Number of verifications : 3
+Number of rules : 3
+Total time needed : 00h 00m 00s
+Time of data preparation : 00h 00m 00s
+Time of rule mining : 00h 00m 00s
+
+
+=== Seznam pravidel ===
+
+List of rules:
+RULEID BASE  CONF  AAD    Rule
+     1  1605 0.026 +0.014 Visibility((8.0, 10.0]) => severity_level(High) | ---
+     2  1605 0.026 +0.014 Visibility((8.0, 10.0]) & Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+     3  2139 0.025 +0.000 Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+
+
+=== První pravidlo ===
+
+
+Rule id : 1
+
+Base :  1605  Relative base : 0.019  CONF : 0.026  AAD : +0.014  BAD : -0.014
+
+Cedents:
+  antecedent : Visibility((8.0, 10.0])
+  succcedent : severity_level(High)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  | 1605|60666|
+----|-----|-----|
+¬A  |  534|21326|
+----|-----|-----|
+

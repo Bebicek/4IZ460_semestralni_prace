@@ -1,0 +1,63 @@
+=== Shrnutí ===
+
+CleverMiner task processing summary:
+
+Task type : 4ftMiner
+Number of verifications : 25
+Number of rules : 25
+Total time needed : 00h 00m 00s
+Time of data preparation : 00h 00m 00s
+Time of rule mining : 00h 00m 00s
+
+
+=== Seznam pravidel ===
+
+List of rules:
+RULEID BASE  CONF  AAD    Rule
+     1     3 0.273 +1.345 demographic_data.Total Population((5786466.999, 50544332.0]) => Severity(2.0) | ---
+     2     3 0.273 +1.345 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Male Population((2931178.999, 25364055.0]) => Severity(2.0) | ---
+     3     3 0.273 +1.345 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) => Severity(2.0) | ---
+     4     3 0.333 +1.867 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+     5     3 0.300 +1.580 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+     6     3 0.273 +1.345 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) => Severity(2.0) | ---
+     7     3 0.333 +1.867 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+     8     3 0.300 +1.580 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+     9     3 0.333 +1.867 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+    10     3 0.333 +1.867 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    11     3 0.300 +1.580 demographic_data.Total Population((5786466.999, 50544332.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    12     3 0.273 +1.345 demographic_data.Male Population((2931178.999, 25364055.0]) => Severity(2.0) | ---
+    13     3 0.273 +1.345 demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) => Severity(2.0) | ---
+    14     3 0.333 +1.867 demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+    15     3 0.300 +1.580 demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    16     3 0.333 +1.867 demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+    17     3 0.333 +1.867 demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    18     3 0.300 +1.580 demographic_data.Male Population((2931178.999, 25364055.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    19     3 0.273 +1.345 demographic_data.Female Population((2855287.999, 25180277.0]) => Severity(2.0) | ---
+    20     3 0.333 +1.867 demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+    21     3 0.333 +1.867 demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Black or African American Alone((122410.999, 5026453.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    22     3 0.300 +1.580 demographic_data.Female Population((2855287.999, 25180277.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    23     3 0.273 +1.345 demographic_data.Black or African American Alone((122410.999, 5026453.0]) => Severity(2.0) | ---
+    24     3 0.300 +1.580 demographic_data.Black or African American Alone((122410.999, 5026453.0]) & demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+    25     3 0.273 +1.345 demographic_data.Hispanic or Latino((205509.999, 3661438.0]) => Severity(2.0) | ---
+
+
+=== První pravidlo ===
+
+
+Rule id : 1
+
+Base :     3  Relative base : 0.070  CONF : 0.273  AAD : +1.345  BAD : -1.345
+
+Cedents:
+  antecedent : demographic_data.Total Population((5786466.999, 50544332.0])
+  succcedent : Severity(2.0)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  |    3|    8|
+----|-----|-----|
+¬A  |    2|   30|
+----|-----|-----|
+

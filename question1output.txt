@@ -1,0 +1,47 @@
+=== Shrnutí ===
+
+CleverMiner task processing summary:
+
+Task type : 4ftMiner
+Number of verifications : 9
+Number of rules : 9
+Total time needed : 00h 00m 00s
+Time of data preparation : 00h 00m 00s
+Time of rule mining : 00h 00m 00s
+
+
+=== Seznam pravidel ===
+
+List of rules:
+RULEID BASE  CONF  AAD    Rule
+     1   834 0.024 -0.043 Weather_numeric(1) => severity_level(High) | ---
+     2   834 0.024 -0.043 Weather_numeric(1) & Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+     3   876 0.028 +0.097 Weather_numeric(2) => severity_level(High) | ---
+     4   876 0.028 +0.097 Weather_numeric(2) & Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+     5   711 0.033 +0.306 Temperature((-20.001, 37.0]) => severity_level(High) | ---
+     6   711 0.033 +0.306 Temperature((-20.001, 37.0]) & Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+     7   748 0.035 +0.387 Pressure((20.169, 28.95]) => severity_level(High) | ---
+     8   748 0.035 +0.387 Pressure((20.169, 28.95]) & Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+     9  2139 0.025 +0.000 Precipitation((-0.001, 1.0]) => severity_level(High) | ---
+
+
+=== První pravidlo ===
+
+
+Rule id : 1
+
+Base :   834  Relative base : 0.010  CONF : 0.024  AAD : -0.043  BAD : +0.043
+
+Cedents:
+  antecedent : Weather_numeric(1)
+  succcedent : severity_level(High)
+  condition  : ---
+
+Fourfold table
+    |  S  |  ¬S |
+----|-----|-----|
+ A  |  834|33446|
+----|-----|-----|
+¬A  | 1305|48525|
+----|-----|-----|
+
